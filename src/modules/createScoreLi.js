@@ -5,7 +5,7 @@
     const pScore = document.createElement('p');
    
     // Add text to elements
-    pScore.textContent = `"${score.name}":${score.score}`;
+    pScore.textContent = `${score.name}:${score.score}`;
 
     // Build li
     scoreLi.appendChild(pScore);

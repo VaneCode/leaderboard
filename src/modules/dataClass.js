@@ -1,4 +1,4 @@
-const scores =
+export const scores =
 [
     {name: 'Name', score:100},
     {name: 'Name', score:20},
