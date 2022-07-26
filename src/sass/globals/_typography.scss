@@ -1,0 +1,39 @@
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-title);
+  margin-top: 0;
+  color: red;
+}
+
+h1{
+  color: var(--orange-color);
+  text-align: center;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+p {
+  margin-top: 0;
+}
+
+a,
+a:hover,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+li {
+  display: flex;
+}
