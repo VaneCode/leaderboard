@@ -1,11 +1,15 @@
-const scores = [
-  { name: 'Name', score: 100 },
-  { name: 'Name', score: 20 },
-  { name: 'Name', score: 50 },
-  { name: 'Name', score: 78 },
-  { name: 'Name', score: 125 },
-  { name: 'Name', score: 77 },
-  { name: 'Name', score: 42 },
-];
-
-export default scores;
+export default class DataClass {
+  static getScores() {
+    let scores = [];
+    if (localStorage.getItem("scores")) {
+      scores = JSON.parse(localStorage.getItem("scores"));
+    } else {
+      localStorage.setItem("scores", JSON.stringify(scores));
+    }
+    return scores;
+  }
+  
+  static setScores(scores) {
+    localStorage.setItem("tasks", JSON.stringify(scores));
+  }
+}

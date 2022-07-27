@@ -1,9 +1,9 @@
 import ulRecentScores from './domElements.js';
 import createScoreLi from './createScoreLi.js';
-import scores from './dataClass.js';
+import DataClass from './dataClass.js';
 
 const createScoresUl = () => {
-  scores.forEach((score) => {
+  DataClass.getScores.forEach((score) => {
     ulRecentScores.appendChild(createScoreLi(score));
   });
 };
