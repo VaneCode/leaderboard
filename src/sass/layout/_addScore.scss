@@ -1,0 +1,24 @@
+.divAddScore {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 50%;
+}
+
+h2 {
+  width: 100%;
+  text-align: justify;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+#addBtn {
+  align-self: flex-end;
+  height: 1.6rem;
+  text-align: center;
+  line-height: 1.6rem;
+}
