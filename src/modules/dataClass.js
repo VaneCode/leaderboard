@@ -10,6 +10,7 @@ export default class DataClass {
   }
 
   static setScores(scores) {
-    localStorage.setItem('tasks', JSON.stringify(scores));
+    scores.sort(((a, b) => b.score - a.score));
+    localStorage.setItem('scores', JSON.stringify(scores));
   }
 }
