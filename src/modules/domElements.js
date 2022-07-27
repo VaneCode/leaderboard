@@ -1,2 +1,4 @@
 // -------------------GET DOM ELEMENTS-----------------//
-export const ulRecentScores = document.querySelector('.ulRecentScores');
+const ulRecentScores = document.querySelector('.ulRecentScores');
+
+export default ulRecentScores;

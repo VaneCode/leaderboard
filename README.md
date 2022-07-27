@@ -1,8 +1,8 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project name
+# Leaderboard
 
-> Project description
+> This is a project that shows a board with the player's scores and also allows the user to submit their own score. This project usess the Leaderboard API service to manage the data. 
 
 ## Built With
 
@@ -10,10 +10,11 @@
 - CSS/SASS
 - Visual Studio
 - JavaScript
+- Webpack
 
-## Live Demo
+## Live Demo 
 
-[Live Demo Link](https://vanecode.github.io/art-gallery/)
+[Live Demo Link]()
 
 ## Getting Started
 
@@ -26,25 +27,18 @@ To get a local copy up and running follow these simple example steps.
 
 ### Setup
 
-- Open the [Repository Link](https://github.com/VaneCode/art-gallery) of this project in GitHub.
+- Open the [Repository Link](https://github.com/VaneCode/leaderboard) of this project in GitHub.
 
 ### Install
 
 - Clone the repository on your local machine, using this command:
 
-git clone https://github.com/VaneCode/art-gallery.git
+git clone https://github.com/VaneCode/leaderboard.git
 
 
-## Authors
+## Author
 
 👤 **Vanessa Bonito**
-
-- GitHub: [@githubhandle](https://github.com/VaneCode)
-- Twitter: [@twitterhandle](https://twitter.com/BonitoNarvaez)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/vanessa-bonito-narv%C3%A1ez-6681941b5/)
-
-
-**Author name**
 
 - GitHub: [@githubhandle](https://github.com/VaneCode)
 - Twitter: [@twitterhandle](https://twitter.com/BonitoNarvaez)

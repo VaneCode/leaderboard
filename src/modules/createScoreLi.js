@@ -1,16 +1,16 @@
 // Function to generate an li element
-  const createScoreLi = (score) => {
-    // Create elements
-    const scoreLi = document.createElement('li');
-    const pScore = document.createElement('p');
-   
-    // Add text to elements
-    pScore.textContent = `${score.name}:${score.score}`;
+const createScoreLi = (score) => {
+  // Create elements
+  const scoreLi = document.createElement('li');
+  const pScore = document.createElement('p');
 
-    // Build li
-    scoreLi.appendChild(pScore);
-    
-    return scoreLi;
-  }
+  // Add text to elements
+  pScore.textContent = `${score.name}:${score.score}`;
 
-  export default createScoreLi;
+  // Build li
+  scoreLi.appendChild(pScore);
+
+  return scoreLi;
+};
+
+export default createScoreLi;

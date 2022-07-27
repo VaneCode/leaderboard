@@ -115,7 +115,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElem
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _modules_createScoresUl__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/createScoresUl */ \"./src/modules/createScoresUl.js\");\n// Import modules\r\n\r\n\r\n\r\n\r\nwindow.addEventListener('load', () => {\r\n  (0,_modules_createScoresUl__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\r\n});\r\n\r\n\n\n//# sourceURL=webpack://hellomicroverse/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sass_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./sass/style.scss */ \"./src/sass/style.scss\");\n/* harmony import */ var _modules_createScoresUl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./modules/createScoresUl.js */ \"./src/modules/createScoresUl.js\");\n// Import modules\n\n\n\nwindow.addEventListener('load', () => {\n  (0,_modules_createScoresUl_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])();\n});\n\n\n//# sourceURL=webpack://hellomicroverse/./src/index.js?");
 
 /***/ }),
 
@@ -125,7 +125,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _sas
   \**************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Function to generate an li element\r\n  const createScoreLi = (score) => {\r\n    // Create elements\r\n    const scoreLi = document.createElement('li');\r\n    const pScore = document.createElement('p');\r\n   \r\n    // Add text to elements\r\n    pScore.textContent = `${score.name}:${score.score}`;\r\n\r\n    // Build li\r\n    scoreLi.appendChild(pScore);\r\n    \r\n    return scoreLi;\r\n  }\r\n\r\n  /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createScoreLi);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/createScoreLi.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// Function to generate an li element\nconst createScoreLi = (score) => {\n  // Create elements\n  const scoreLi = document.createElement('li');\n  const pScore = document.createElement('p');\n\n  // Add text to elements\n  pScore.textContent = `${score.name}:${score.score}`;\n\n  // Build li\n  scoreLi.appendChild(pScore);\n\n  return scoreLi;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createScoreLi);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/createScoreLi.js?");
 
 /***/ }),
 
@@ -135,7 +135,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \***************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _domElements__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements */ \"./src/modules/domElements.js\");\n/* harmony import */ var _createScoreLi__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createScoreLi */ \"./src/modules/createScoreLi.js\");\n/* harmony import */ var _dataClass__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dataClass */ \"./src/modules/dataClass.js\");\n\r\n\r\n\r\n\r\nconst createScoresUl = () =>{\r\n    _dataClass__WEBPACK_IMPORTED_MODULE_2__.scores.forEach(score => {\r\n        _domElements__WEBPACK_IMPORTED_MODULE_0__.ulRecentScores.appendChild((0,_createScoreLi__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(score));\r\n    });\r\n}\r\n\r\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createScoresUl);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/createScoresUl.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _domElements_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./domElements.js */ \"./src/modules/domElements.js\");\n/* harmony import */ var _createScoreLi_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createScoreLi.js */ \"./src/modules/createScoreLi.js\");\n/* harmony import */ var _dataClass_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./dataClass.js */ \"./src/modules/dataClass.js\");\n\n\n\n\nconst createScoresUl = () => {\n  _dataClass_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"].forEach((score) => {\n    _domElements_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"].appendChild((0,_createScoreLi_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"])(score));\n  });\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createScoresUl);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/createScoresUl.js?");
 
 /***/ }),
 
@@ -145,7 +145,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"scores\": () => (/* binding */ scores)\n/* harmony export */ });\nconst scores =\r\n[\r\n    {name: 'Name', score:100},\r\n    {name: 'Name', score:20},\r\n    {name: 'Name', score:50},\r\n    {name: 'Name', score:78},\r\n    {name: 'Name', score:125},\r\n    {name: 'Name', score:77},\r\n    {name: 'Name', score:42},\r\n];\r\n\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/dataClass.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst scores = [\n  { name: 'Name', score: 100 },\n  { name: 'Name', score: 20 },\n  { name: 'Name', score: 50 },\n  { name: 'Name', score: 78 },\n  { name: 'Name', score: 125 },\n  { name: 'Name', score: 77 },\n  { name: 'Name', score: 42 },\n];\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (scores);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/dataClass.js?");
 
 /***/ }),
 
@@ -155,7 +155,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"ulRecentScores\": () => (/* binding */ ulRecentScores)\n/* harmony export */ });\n// -------------------GET DOM ELEMENTS-----------------//\r\nconst ulRecentScores = document.querySelector('.ulRecentScores');\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/domElements.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n// -------------------GET DOM ELEMENTS-----------------//\nconst ulRecentScores = document.querySelector('.ulRecentScores');\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (ulRecentScores);\n\n//# sourceURL=webpack://hellomicroverse/./src/modules/domElements.js?");
 
 /***/ })
 

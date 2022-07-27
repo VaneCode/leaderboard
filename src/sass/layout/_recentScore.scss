@@ -1,38 +1,37 @@
-.divRecentScores{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+.divRecentScores {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
 
-.divRecentScores div{
-    display: flex;
-    align-items: center;
-    gap: 2rem;
+.divRecentScores div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
 }
 
 .ulRecentScores {
-    border: 0.2rem solid var(--black-color);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0;
-    width: 100%;
-  }
-  
+  border: 0.2rem solid var(--black-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  width: 100%;
+}
+
 .ulRecentScores li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0.4rem;
-    height: 2rem;
-  
-    p {
-      line-height: 2rem;
-      margin-top: 1rem;
-    }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.4rem;
+  height: 2rem;
+
+  p {
+    line-height: 2rem;
+    margin-top: 1rem;
   }
-  
-  .ulRecentScores li:nth-child(odd) {
-    background-color: var(--light-grey);
-  }
-  
+}
+
+.ulRecentScores li:nth-child(odd) {
+  background-color: var(--light-grey);
+}

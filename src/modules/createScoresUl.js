@@ -1,11 +1,11 @@
-import { ulRecentScores } from "./domElements";
-import createScoreLi from "./createScoreLi";
-import { scores } from "./dataClass";
+import ulRecentScores from './domElements.js';
+import createScoreLi from './createScoreLi.js';
+import scores from './dataClass.js';
 
-const createScoresUl = () =>{
-    scores.forEach(score => {
-        ulRecentScores.appendChild(createScoreLi(score));
-    });
-}
+const createScoresUl = () => {
+  scores.forEach((score) => {
+    ulRecentScores.appendChild(createScoreLi(score));
+  });
+};
 
 export default createScoresUl;
