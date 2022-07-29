@@ -1,9 +1,12 @@
 const validationFrm = (form) => {
-    let val = true;
-    if(form.elements[0].value === ' ' || form.elements[1].value === ' '){
-        val = false;
+    let val = 'correct';
+    if(form.elements[0].value.length === 0){
+        form.elements[0].focus();
+        return val = 'Please fill out the field name';  
+    }else if(form.elements[1].value.length === 0){
+        form.elements[0].focus();
+        return val = 'Please fill out the field score';  
     }
-
     return val;
 };
 

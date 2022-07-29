@@ -13,10 +13,10 @@ const getScoresByGame = async (id) => {
       if (response.ok) return response.json();
       return Promise.reject(response);
     })
-    .then((data) => data.json())
     .then((data) => {
-      let scores = [];
-      scores = JSON.parse(data);
+      //data.json();
+      data.result.sort((a, b) => b.score - a.score);
+      console.log(data);
     });
   return scoresAPI;
 };
