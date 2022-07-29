@@ -5,7 +5,7 @@ import getScoresByGame from './getScoresByGame.js';
 import DataClass from './dataClass.js';
 
 const createScoresUl = async () => {
-  cleanElement('ulRecentScores');
+  cleanElement('.ulRecentScores');
   const id = await DataClass.getIDGame();
   const scores = await getScoresByGame(id);
   scores.forEach((score) => {

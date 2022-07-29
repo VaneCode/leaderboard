@@ -1,4 +1,4 @@
-//Async function to post a new game in the API
+// Async function to post a new game in the API
 const postNewGame = async () => {
   const game = await fetch(
     'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games',
