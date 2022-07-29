@@ -7,8 +7,8 @@ const postNewScore = async (id, userName, userScore) => {
         "Content-type": "application/json",
       },
       body: JSON.stringify({
-        userName,
-        userScore,
+        "user":userName,
+        "score":userScore,
       }),
       method: "POST",
       mode: 'cors',
@@ -18,8 +18,7 @@ const postNewScore = async (id, userName, userScore) => {
       if (response.ok) return response.json();
       return Promise.reject(response);
     })
-  .then((data) => {data.result;
-  console.log(data.result)});
+  .then((data) => data.result);
   return score;
 };
 

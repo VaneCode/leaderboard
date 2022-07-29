@@ -13,12 +13,14 @@ const getScoresByGame = async (id) => {
       if (response.ok) return response.json();
       return Promise.reject(response);
     })
-    .then((data) => {
-      //data.json();
-      data.result.sort((a, b) => b.score - a.score);
-      console.log(data);
-    });
+    .then((data) => data.result.sort((a, b) => b.score - a.score));
+  //console.log("Response" + scoresAPI);
+  //const scores = scoresAPI.result.sort((a, b) => b.score - a.score);
   return scoresAPI;
+  /*const response = await fetch(path);
+  const data = await response.json();
+  data.result.sort((a, b) => b.score - a.score);
+  return data;*/
 };
 
 export default getScoresByGame;

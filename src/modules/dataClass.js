@@ -20,17 +20,11 @@ export default class DataClass {
   }
 
   static async getIDGame() {
-    //let idGame = JSON.parse(localStorage.getItem('idGame'));
-    //let idGame = await id;
-    //console.log(idGame);
-    //this.setIDGame(idGame);
     let idGame = [];
     if (localStorage.getItem("idGame")) {
       idGame = JSON.parse(localStorage.getItem("idGame"));
-      console.log(idGame);
     } else {
       idGame = await id;
-      console.log(idGame);
       this.setIDGame(idGame);
     }
     return idGame;

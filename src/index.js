@@ -15,9 +15,6 @@ import {
 } from "./modules/domElements.js";
 
 refreshBtn.addEventListener("click", async () => {
-  const id = await DataClass.getIDGame();
-  const scoresAPI = await getScoresByGame(id);
-  DataClass.setScores(scoresAPI);
   createScoresUl();
 });
 
@@ -29,21 +26,19 @@ frmAddScore.addEventListener("submit", async (e) => {
     const score = frmAddScore.elements[1].value;
     const id = await DataClass.getIDGame();
     const result= await postNewScore(id, name, score);
-    console.log(result);
-    
-    /*if(result.lenght !== 0){
-      //msg.textContent = successMsg;
+    //Show succes message
+    if(result.lenght !== 0){
+      msg.textContent = result;
       setTimeout(() => {
         msg.textContent = " ";
-      }, 5000);
-    }*/
-    //Clean the form
-    //frmAddScore.reset();
+      }, 10000);
+    }
+    frmAddScore.reset();
   } else {
     msg.textContent = val;
   }
 });
 
-window.addEventListener("load", () => {
+window.addEventListener("load", async () => {
   createScoresUl();
 });
