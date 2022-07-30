@@ -1,0 +1,10 @@
+input {
+  border-radius: 1rem;
+  background-color: var(--light-grey);
+  height: 1.5rem;
+}
+
+::placeholder {
+  color: var(--white-color);
+  font-family: var(--font-text);
+}
