@@ -2,6 +2,8 @@ input {
   border-radius: 1rem;
   background-color: var(--light-grey);
   height: 1.5rem;
+  color: var(--white-color);
+  font-family: var(--font-text);
 }
 
 ::placeholder {
