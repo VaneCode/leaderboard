@@ -3,30 +3,32 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/icon" href="../images/favicon.ico"/>
+    <link rel="icon" type="image/icon" href="../images/favicon.ico" />
     <title>Leaderboard</title>
   </head>
   <body>
     <header>
-      <h1>Leaderboard</h1>
+      <div class="neonTitle mainTitle">
+        <h1>Leaderboard</h1>
+      </div>
     </header>
     <div class="divContainer">
-        <div class="divRecentScores">
-            <div>
-                <h2>Recent scores</h2>
-                <button id="refreshBtn" type="button">Refresh</button>
-            </div>
-            <ul class="ulRecentScores"></ul>
+      <div class="divRecentScores">
+        <div>
+          <h2>Recent scores</h2>
+          <button id="refreshBtn" type="button">Refresh</button>
         </div>
-        <div class="divAddScore">
-            <h2>Add your score</h2>
-            <form action="#" id="frmAddScore">
-                <input type="text" placeholder="Your name" id="inpName">
-                <input type="number" placeholder="Your score" id="inpScore">
-                <button type="submit" id="addBtn">Submit</button>
-                <small id="msg"></small>
-            </form>
-        </div>
+        <ul class="ulRecentScores"></ul>
+      </div>
+      <div class="divAddScore">
+        <h2>Add your score</h2>
+        <form action="#" id="frmAddScore">
+          <input type="text" placeholder="Your name" id="inpName" />
+          <input type="number" placeholder="Your score" id="inpScore" />
+          <button type="submit" id="addBtn">Submit</button>
+          <small id="msg"></small>
+        </form>
+      </div>
     </div>
   </body>
 </html>

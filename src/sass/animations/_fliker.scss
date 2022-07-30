@@ -1,0 +1,16 @@
+.flicker1 {
+    animation: blink 2s infinite backwards steps(3);
+  }
+  .flicker2 {
+    animation: blink 2.5s infinite backwards steps(4);
+  }
+  .flicker3 {
+    animation: blink 1.5s infinite backwards steps(2);
+  }
+  
+  @keyframes blink {
+    to {
+      color:var(--title-color);
+      text-shadow: none;
+    }
+  }
