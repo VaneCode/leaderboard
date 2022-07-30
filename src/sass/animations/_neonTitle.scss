@@ -2,19 +2,19 @@
   0% {
     text-shadow: 0 0 0.5rem var(--title-color), 0 0 1.5rem var(--title-color),
       0 0 3rem var(--title-color);
-  } /*Amarillo*/
+  } 
   25% {
     text-shadow: 0 0 0.5rem var(--white-color), 0 0 1.5rem var(--white-color),
-  } /*Naranja*/
+  } 
   50% {
     text-shadow: 0 0 0.5rem var(--border-color), 0 0 1.5rem var(--border-color),
-  } /*Negro*/
+  } 
   75% {
     text-shadow: 0 0 0.5rem var(--second-color), 0 0 1.5rem var(--second-color),
-  } /*Otra vez naranja*/
+  } 
   100% {
     text-shadow: 0 0 0.5rem var(--background-color), 0 0 1.5rem var(--background-color),
-  } /*Otra vez amarillo*/
+  } 
 }
 h1 {
   animation-name: anim;

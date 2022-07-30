@@ -1,7 +1,11 @@
 button {
   text-align: center;
-  line-height: normal;
-  background-color: transparent;
-  border: 0.1rem solid var(--black-color);
+  height: 1.8rem;
+  line-height: 1.8rem;
+  font-family: var(--font-text);
+  font-weight: bold;
+  color: var(--white-color);
+  background-image: linear-gradient(to right top, #ffad01, #ff9e5c, #ff9c96, #ffa8c6, #feb9e4);
+  border-radius: 1rem;
   cursor: pointer;
 }
